@@ -43,3 +43,12 @@ After the files are cleaned run this command in your folder to perform the conve
 
 for %f in (*.tif) do tif2mrc "%f" "%~nf.mrc"
 
+## License
+
+The code is freely available to download and run, but it’s protected and
+licensed under a [Creative Commons Attribution-ShareAlike 4.0
+International License](https://creativecommons.org/licenses/by-nc/4.0/),
+meaning you can use it but citing it’s source.
+
+[![License: CC BY-NC
+4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
