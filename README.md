@@ -39,11 +39,11 @@ By automating the detection and cleaning of null bytes in TIFF file metadata, yo
 If you have python and IMOD you can run this script by downloading the file check_tiff_metadata located in this folder.
 
 ## Conversion after cleaning.
-After the files are cleaned run this command in your folder to perform the conversion to .mrc, you will need IMOD installed
+After the files are cleaned run one of the following commands in your folder to perform the conversion to .mrc, you will need IMOD installed
 
-for %f in (*.tif) do tif2mrc "%f" "%~nf.mrc"  
-or
-foreach ($a in Get-ChildItem *.tif) { & "C:\\YourPath\\IMOD\bin\tif2mrc.exe" -B 0 $a.FullName ".\$($a.BaseName).mrc"
+1. for %f in (*.tif) do tif2mrc "%f" "%~nf.mrc"  
+
+2. foreach ($a in Get-ChildItem *.tif) { & "C:\\YourPath\\IMOD\bin\tif2mrc.exe" -B 0 $a.FullName ".\$($a.BaseName).mrc"
 
 ## License
 
