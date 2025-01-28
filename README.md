@@ -2,9 +2,9 @@ tiff_2_mrc
 ================
 Short pipeline to convert .tiff files produced by WVU EM scope to mrc so they can be uploaded and processed by  CryoSPARC
 
-# Converting EM.tiff to mrc for CryoSPARC:
+## Converting EM.tiff to mrc for CryoSPARC:
 
-What: You received warnings during the conversion of TIFF files to MRC format due to null bytes in the ImageDescription metadata from the EM scope.
+What: You received warnings or errors from CryoSPARC during upload of your images or during the conversion of TIFF files to MRC format in IMOD due to null bytes in the ImageDescription metadata collected from the WVU-EM scope.
 Why: Null bytes can lead to data truncation and incorrect reading of metadata, which can affect subsequent processing.
 
 ### check_tiff_metadata to identify problematic files:
